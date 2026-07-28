@@ -1,0 +1,51 @@
+🧠 Why This Is Important
+
+Without Feature Flags:
+Developer
+     │
+     ▼
+Deploy New Version
+     │
+Feature Always ON
+
+If a bug is found:
+❌ Rollback Required
+
+With Feature Flags:
+Developer
+     │
+     ▼
+Deploy Feature
+     │
+Feature Flag = OFF
+     │
+     ▼
+Enable When Ready
+
+Benefits:
+✅ Enable/disable features instantly
+✅ Safe production releases
+✅ A/B testing support
+✅ Canary rollout support
+✅ No redeployment required
+
+Used By:
+Netflix
+Facebook
+Uber
+Spotify
+Microsoft
+
+🛠 Tech Stack
+Python
+Flask
+SQLite
+SQLAlchemy
+
+📂 Project Structure
+feature-flags-service/
+│
+├── app.py
+├── models.py
+├── requirements.txt
+└── README.md
